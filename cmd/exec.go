@@ -5,7 +5,6 @@ import (
 	"github.com/spf13/cobra"
 	"go.uber.org/zap/zapcore"
 	"github.com/actorbuf/skeleton/config"
-	"github.com/actorbuf/iota/utils"
 	logger "github.com/actorbuf/skeleton/log"
 	"os"
 )
