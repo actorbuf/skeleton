@@ -42,14 +42,6 @@ func preOperation() {
 		panic("service name cannot be empty! ")
 	}
 
-	environmentList := []string{"local", "dev", "prod"}
-
-	searchResult, _ := utils.BaseTypeInArray(config.Cfg.Environment, environmentList)
-
-	if !searchResult {
-		panic("environment must be one of local/dev/prod! ")
-	}
-
 	developmentMod := true
 	logLevel := zapcore.DebugLevel
 	if config.Cfg.Environment == "prod" {
