@@ -1,0 +1,15 @@
+service-name: github.com/actorbuf/skeleton
+environment: local
+
+http-server-listen: 0.0.0.0:12580
+
+grpc-server-listen: 0.0.0.0:12581
+
+redis-pool:
+  address:
+    -"127.0.0.1:6379"
+  max-idle: 10
+  max-active: 200
+  wait: true
+  password: admin
+
